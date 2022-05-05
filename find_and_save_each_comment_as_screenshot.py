@@ -2,7 +2,9 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from PIL import Image
 
-ser = Service("C:/Users/warren/PycharmProjects/youtube upload/chromedriver.exe")
+ser = Service("C:/Users/chromedriver.exe")
+## change to chromedriver location
+
 op = webdriver.ChromeOptions()
 op.headless = True
 driver = webdriver.Chrome(service = ser, options = op)
